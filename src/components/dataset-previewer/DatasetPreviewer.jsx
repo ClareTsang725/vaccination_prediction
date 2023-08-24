@@ -1,5 +1,7 @@
 // modules
 import React, { useState } from 'react';
+// css
+import "./DatasetPreviewer.css";
 
 export default function DatasetPreviewer() {
     const [fileContent, setFileContent] = useState('');
@@ -20,7 +22,7 @@ export default function DatasetPreviewer() {
 
 
     return (
-        <div>
+        <div className='dataset-previewer'>
             <input type="file" onChange={handleFileChange} />
             <pre>{fileContent}</pre>
         </div>

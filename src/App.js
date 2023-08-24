@@ -3,7 +3,7 @@ import { useState } from 'react';
 // css
 import './App.css';
 // components
-import DatasetPreviewer from './components/DatasetPreviewer';
+import DatasetPreviewer from './components/dataset-previewer/DatasetPreviewer';
 
 function App() {
   // metadata
@@ -76,7 +76,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div className='dataset-previewer-container'>
           <DatasetPreviewer />
         </div>
       </div>

@@ -48,3 +48,8 @@
 .result-item {
   flex:1;
 }
+.dataset-previewer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
