@@ -2,6 +2,8 @@
 import { useState } from 'react';
 // css
 import './App.css';
+// components
+import DatasetPreviewer from './components/DatasetPreviewer';
 
 function App() {
   // metadata
@@ -23,7 +25,8 @@ function App() {
       <div className='app-header'>
         <h1>Vaccination Forcast</h1>
       </div>
-      <div className='app-body'>        
+      <div className='app-body'>   
+      {/* Selections */}
         <div className='selection-section'>
           <div className='selection-item'>
             <label>Country :{" "}</label>
@@ -52,6 +55,7 @@ function App() {
             </select>
           </div>
         </div>
+        {/* result */}
         <div className='result-section'>
           <div className='result-item' style={{textAlign:'right'}}>
             <h3>Result:{" "}</h3>
@@ -71,6 +75,9 @@ function App() {
               <input />
             </div>
           </div>
+        </div>
+        <div>
+          <DatasetPreviewer />
         </div>
       </div>
     </div>
